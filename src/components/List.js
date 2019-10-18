@@ -1,10 +1,18 @@
 import React from "react";
 
-const List = () => {
+const List = props => {
+  const { wishList } = props;
   return (
     <div>
       <ul className="list">
-        <li className="list-item">Info a pincho</li>
+        {wishList.map((wish, index) => {
+          return (
+            <li className="list-item" key={index}>
+              <input type="checkbox" />
+              {wish}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

@@ -31,8 +31,6 @@ class App extends React.Component {
       wishList: this.state.wishList,
       inputWish: ""
     });
-
-    console.log(this.state.inputWish);
   }
   render() {
     const { inputWish } = this.state;
@@ -45,7 +43,7 @@ class App extends React.Component {
           inputWish={inputWish}
           wishList={this.state.wishList}
         />
-        <List />
+        <List wishList={this.state.wishList} />
       </div>
     );
   }
