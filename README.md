@@ -14,6 +14,6 @@ Create a wishlist to Santa to know what gifts you want this year. Using https://
 The app MUST have an input text field, a submit button and a list painted under. 
 Bonus* I've added a clickable checkbox for Santa to select what gifts are already prepared. 
 
-# How its look
+# How it looks
 
 ![Christmas Wishlist for Teamwire](./docs/images/screenshot.png)
