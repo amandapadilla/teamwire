@@ -11,9 +11,9 @@ This is a technical skills test for hiring process.
 # Requirements
 
 Create a wishlist to Santa to know what gifts you want this year. Using https://material-ui.com components in React.
-The app MUST have an input text field, a submit button and an array painted above. 
+The app MUST have an input text field, a submit button and a list painted under. 
 Bonus* I've added a clickable checkbox for Santa to select what gifts are already prepared. 
 
 # How its look
 
-![Christmas Wishlist for Teamwire](./docs/images/teamwireframe.png)
+![Christmas Wishlist for Teamwire](./docs/images/screenshot.png)
