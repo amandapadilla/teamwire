@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import Form from "./Form";
-import List from "./List";
+import AddWish from "./AddWish";
+import List from "./ListUI";
 import "../stylesheets/App.css";
 
 class App extends React.Component {
@@ -26,24 +26,29 @@ class App extends React.Component {
 
   handleSubmitClick(ev) {
     ev.preventDefault();
+    if (!this.state.inputWish) {
+      return;
+    }
     this.state.wishList.push(this.state.inputWish);
     this.setState({
       wishList: this.state.wishList,
       inputWish: ""
     });
   }
+
   render() {
-    const { inputWish } = this.state;
+    const { inputWish, wishList } = this.state;
+
     return (
       <div className="App">
         <Header />
-        <Form
+        <AddWish
           handleInputWish={this.handleInputWish}
           handleSubmitClick={this.handleSubmitClick}
           inputWish={inputWish}
-          wishList={this.state.wishList}
+          wishList={wishList}
         />
-        <List wishList={this.state.wishList} />
+        <List wishList={wishList} handleToggle={this.handleToggle} />
       </div>
     );
   }
